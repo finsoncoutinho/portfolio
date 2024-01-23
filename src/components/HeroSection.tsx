@@ -28,6 +28,14 @@ const HeroSection = () => {
       autoplay: 1,
     },
   }
+  const handleContactMe = () => {
+    window.location.href = 'mailto:finsoncoutinho2125@gmail.com'
+  }
+
+  const handleGithub = () => {
+    window.location.href = 'https://github.com/finsoncoutinho'
+  }
+
   return (
     <section className='flex md:flex-row gap-14   px-10 py-32 items-center justify-center flex-col '>
       <div
@@ -41,11 +49,14 @@ const HeroSection = () => {
           <p className='text-white '>Coding the Future, One Line at a Time</p>
         </div>
         <div className=' flex gap-4 mt-4'>
-          <Button>
+          <Button onClick={handleContactMe}>
             <Mail />
             <span className='ml-2'>Contact me</span>
           </Button>
-          <Button className='bg-transparent text-white hover:text-white hover:text-accent '>
+          <Button
+            onClick={handleGithub}
+            className='bg-transparent text-white hover:bg-white hover:text-accent '
+          >
             <Github />
             <span className='ml-2'>Github</span>
           </Button>
