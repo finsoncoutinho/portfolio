@@ -1,39 +1,49 @@
-import Link from 'next/link'
-import { Link as scrollLink } from 'react-scroll'
+'use client'
+// import Link from 'next/link'
+import { Link } from 'react-scroll'
 import React from 'react'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Menu } from 'lucide-react'
 const Header = () => {
   return (
-    <nav className='relative flex gap-8 px-16 py-7 md:p-4 shadow-md bg-background'>
-      <div className='hidden gap-8 md:flex'>
+    <nav className='sticky top-0 flex gap-8 px-6 py-4 md:p-4 md:px-14 shadow-md bg-background  justify-between'>
+      <h1 className='text-primary text-lg font-semibold '>
+        finsoncoutinho.dev
+      </h1>
+      <div className='hidden gap-8 md:flex '>
         <Link
-          href='/'
+          to='home'
+          smooth={true}
+          duration={500}
           className='hidden text-lg font-semibold  md:block text-white  '
         >
           Home
         </Link>
         <Link
-          href='/'
+          to='projects'
+          smooth={true}
+          duration={500}
           className='hidden text-lg font-semibold  md:block  text-white'
         >
           Projects
         </Link>
-        <Link
-          href='/'
+        {/* <Link
+          to='/'
+          smooth={true}
+          duration={500}
           className='hidden text-lg font-semibold  md:block text-white '
         >
           About me
-        </Link>
+        </Link> */}
         <Link
-          href='/'
+          to='contact'
+          smooth={true}
+          duration={500}
           className='hidden text-lg font-semibold md:block text-white'
         >
           Contact me
@@ -45,11 +55,16 @@ const Header = () => {
             <Menu size={32} color='white' />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>Home</DropdownMenuLabel>
-
-            <DropdownMenuItem>Projects</DropdownMenuItem>
-            <DropdownMenuItem>About me</DropdownMenuItem>
-            <DropdownMenuItem>Contact me</DropdownMenuItem>
+            <Link to='home' smooth={true} duration={500}>
+              <DropdownMenuItem>Home</DropdownMenuItem>
+            </Link>
+            <Link to='projects' smooth={true} duration={500}>
+              <DropdownMenuItem>Projects</DropdownMenuItem>
+            </Link>
+            <Link to='contact' smooth={true} duration={500}>
+              <DropdownMenuItem>Contact me</DropdownMenuItem>
+            </Link>
+            {/* <DropdownMenuItem>About me</DropdownMenuItem> */}
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
