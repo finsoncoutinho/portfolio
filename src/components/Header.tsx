@@ -20,7 +20,7 @@ const Header = () => {
           to='home'
           smooth={true}
           duration={500}
-          className='hidden text-lg font-semibold  md:block text-white  '
+          className='hidden text-lg font-semibold  md:block text-white cursor-pointer '
         >
           Home
         </Link>
@@ -28,7 +28,7 @@ const Header = () => {
           to='projects'
           smooth={true}
           duration={500}
-          className='hidden text-lg font-semibold  md:block  text-white'
+          className='hidden text-lg font-semibold  md:block  text-white cursor-pointer'
         >
           Projects
         </Link>
@@ -44,7 +44,7 @@ const Header = () => {
           to='contact'
           smooth={true}
           duration={500}
-          className='hidden text-lg font-semibold md:block text-white'
+          className='hidden text-lg font-semibold md:block text-white cursor-pointer'
         >
           Contact me
         </Link>
