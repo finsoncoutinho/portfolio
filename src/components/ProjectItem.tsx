@@ -22,8 +22,8 @@ const ProjectItem = ({ project }: { project: IProject }) => {
           <Image
             className='rounded-t-xl  mb-6 w-full'
             src='/img.png'
-            width={500}
-            height={500}
+            width={100}
+            height={100}
             alt={project.projectTitle}
           />
 
