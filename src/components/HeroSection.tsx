@@ -1,12 +1,9 @@
-'use client'
 import YouTube, { YouTubeProps } from 'react-youtube'
-import { Button } from './ui/button'
+
 import { Mail, Github } from 'lucide-react'
+import CustomButton from './CustomButton'
+import VideoPlayer from './VideoPlayer'
 const HeroSection = () => {
-  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo()
-  }
   const optsSM: YouTubeProps['opts'] = {
     width: '300',
     height: '169',
@@ -15,8 +12,8 @@ const HeroSection = () => {
     },
   }
   const optsMD: YouTubeProps['opts'] = {
-    width: '500',
-    height: '281',
+    width: '438',
+    height: '246',
     playerVars: {
       autoplay: 1,
     },
@@ -28,48 +25,44 @@ const HeroSection = () => {
       autoplay: 1,
     },
   }
-  const handleContactMe = () => {
-    window.location.href = 'mailto:finsoncoutinho2125@gmail.com'
-  }
-
-  const handleGithub = () => {
-    window.location.href = 'https://github.com/finsoncoutinho'
-  }
 
   return (
-    <section className='flex md:flex-row gap-14   px-10 py-32 items-center justify-center flex-col '>
+    <section
+      id='home'
+      className='flex md:flex-row gap-14   px-10 py-32 items-center justify-center flex-col '
+    >
       <div
         className='flex
        flex-col gap-4 pl-5 items-start justify-center'
       >
         <div>
-          <h1 className='font-extrabold text-white lg:text-6xl text-3xl '>
+          <h1 className='font-extrabold text-white lg:text-6xl text-4xl '>
             Finson <span className='text-primary'>Coutinho</span>
           </h1>
           <p className='text-white '>Coding the Future, One Line at a Time</p>
         </div>
         <div className=' flex gap-4 mt-4'>
-          <Button onClick={handleContactMe}>
+          <CustomButton url='mailto:finsoncoutinho2125@gmail.com'>
             <Mail />
             <span className='ml-2'>Contact me</span>
-          </Button>
-          <Button
-            onClick={handleGithub}
-            className='bg-transparent text-white hover:bg-white hover:text-accent '
+          </CustomButton>
+          <CustomButton
+            url='https://github.com/finsoncoutinho'
+            classname='bg-transparent text-white hover:bg-white hover:text-accent '
           >
             <Github />
             <span className='ml-2'>Github</span>
-          </Button>
+          </CustomButton>
         </div>
       </div>
       <div className='hidden lg:block '>
-        <YouTube videoId='2g811Eo7K8U' opts={optsLG} onReady={onPlayerReady} />
+        <VideoPlayer videoID='CtDyLTx3RAQ' options={optsLG} />
       </div>
       <div className='hidden md:block lg:hidden'>
-        <YouTube videoId='2g811Eo7K8U' opts={optsMD} onReady={onPlayerReady} />
+        <VideoPlayer videoID='CtDyLTx3RAQ' options={optsMD} />
       </div>
       <div className=' md:hidden'>
-        <YouTube videoId='2g811Eo7K8U' opts={optsSM} onReady={onPlayerReady} />
+        <VideoPlayer videoID='CtDyLTx3RAQ' options={optsSM} />
       </div>
     </section>
   )
