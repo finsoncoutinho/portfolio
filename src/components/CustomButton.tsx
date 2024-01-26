@@ -9,7 +9,7 @@ const CustomButton = ({
 }: {
   children: ReactNode
   url: string
-  classname: string
+  classname?: string
 }) => {
   return (
     <Button
