@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs'
 import React from 'react'
 import ProjectItem from './ProjectItem'
+import Link from 'next/link'
 
 const ProjectsSection = async () => {
   const file = await fs.readFile(
@@ -10,6 +11,7 @@ const ProjectsSection = async () => {
   const data = JSON.parse(file)
 
   interface IProject {
+    id: number
     thumbnail: string
     video: string
     projectTitle: string
@@ -25,8 +27,8 @@ const ProjectsSection = async () => {
         Projects
       </h1>
       <div className='flex gap-5  flex-col lg:basis-2 lg:flex-row'>
-        {data.map((project: IProject, i: number) => (
-          <ProjectItem key={i} project={project} />
+        {data.map((project: IProject) => (
+          <ProjectItem project={project} key={project.id} />
         ))}
       </div>
     </section>
