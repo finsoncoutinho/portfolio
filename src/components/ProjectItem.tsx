@@ -3,7 +3,9 @@ import Image from 'next/image'
 
 import CustomButton from './CustomButton'
 import { Github, ExternalLink, Archive } from 'lucide-react'
+import Link from 'next/link'
 interface IProject {
+  id: number
   thumbnail: string
   video: string
   projectTitle: string
@@ -16,7 +18,12 @@ interface IProject {
 
 const ProjectItem = ({ project }: { project: IProject }) => {
   return (
-    <div className='w-full rounded-xl border-none bg-background '>
+    <Link
+      href={{
+        pathname: `/project/${project.id}`,
+      }}
+      className='w-full rounded-xl border-none bg-background '
+    >
       <div className='p-4  text-white flex  flex-col items-start justify-between'>
         <div>
           <Image
@@ -64,7 +71,7 @@ const ProjectItem = ({ project }: { project: IProject }) => {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
