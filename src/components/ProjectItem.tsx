@@ -20,7 +20,7 @@ const ProjectItem = ({ project }: { project: IProject }) => {
   return (
     <Link
       href={{
-        pathname: `/project/${project.id}`,
+        pathname: `/${project.projectTitle}`,
       }}
       className='w-full rounded-xl border-none bg-background '
     >
@@ -34,7 +34,9 @@ const ProjectItem = ({ project }: { project: IProject }) => {
             alt={project.projectTitle}
           />
 
-          <p className='font-bold text-xl mb-1 '>{project.projectTitle}</p>
+          <p className='font-bold text-xl mb-1 '>
+            {project.projectTitle.split('-').join(' ')}
+          </p>
           <div className='flex gap-6  mt-4'>
             {project.liveLink.length > 0 && (
               <CustomButton
