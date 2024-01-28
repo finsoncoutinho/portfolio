@@ -6,7 +6,7 @@ import React from 'react'
 
 const Projects = async () => {
   const file = await fs.readFile(
-    process.cwd() + '/src/services/more-projects.json',
+    process.cwd() + '/src/app/more-projects.json',
     'utf8'
   )
   const data = JSON.parse(file)

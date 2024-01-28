@@ -6,7 +6,7 @@ import { ArrowRight, MoveRight } from 'lucide-react'
 
 const ProjectsSection = async () => {
   const file = await fs.readFile(
-    process.cwd() + '/src/services/main-projects.json',
+    process.cwd() + '/src/app/main-projects.json',
     'utf8'
   )
   const data = JSON.parse(file)

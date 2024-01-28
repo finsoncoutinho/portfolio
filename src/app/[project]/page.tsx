@@ -20,11 +20,11 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
     postmanCollection: string
   }
   const file = await fs.readFile(
-    process.cwd() + '/src/services/main-projects.json',
+    process.cwd() + '/src/app/main-projects.json',
     'utf8'
   )
   const file2 = await fs.readFile(
-    process.cwd() + '/src/services/more-projects.json',
+    process.cwd() + '/src/app/more-projects.json',
     'utf8'
   )
   const JSONdata = JSON.parse(file)
