@@ -30,7 +30,7 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
   const JSONdata = JSON.parse(file)
   const JSONdata2 = JSON.parse(file2)
   const data: IProject = [...JSONdata, ...JSONdata2].find(
-    (project: IProject) => project.projectTitle === params.project
+    (project: IProject) => project.projectTitle.toLowerCase() === params.project
   )
   const optsSM: YouTubeProps['opts'] = {
     width: '300',
