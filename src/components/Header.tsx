@@ -11,7 +11,7 @@ import {
 import { Menu } from 'lucide-react'
 const Header = () => {
   return (
-    <nav className='sticky top-0 flex gap-8 px-6 py-4 md:p-4 md:px-14 shadow-md bg-background  justify-between'>
+    <nav className='sticky top-0 flex gap-8 px-6 py-4 md:p-4 md:px-14 shadow-md bg-background  justify-between z-50'>
       <h1 className='text-primary text-lg font-semibold '>
         finsoncoutinho.dev
       </h1>
