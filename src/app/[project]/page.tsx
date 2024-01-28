@@ -1,3 +1,4 @@
+import BackButton from '@/components/BackButton'
 import CustomButton from '@/components/CustomButton'
 import VideoPlayer from '@/components/VideoPlayer'
 import { promises as fs } from 'fs'
@@ -22,8 +23,13 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
     process.cwd() + '/src/services/main-projects.json',
     'utf8'
   )
+  const file2 = await fs.readFile(
+    process.cwd() + '/src/services/more-projects.json',
+    'utf8'
+  )
   const JSONdata = JSON.parse(file)
-  const data: IProject = JSONdata.find(
+  const JSONdata2 = JSON.parse(file2)
+  const data: IProject = [...JSONdata, ...JSONdata2].find(
     (project: IProject) => project.projectTitle === params.project
   )
   const optsSM: YouTubeProps['opts'] = {
@@ -50,9 +56,7 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
   return (
     <div className='bg-accent min-h-screen dark flex flex-col items-center'>
       <header className='sticky top-0 flex gap-8 px-6 py-4  md:px-10 shadow-md bg-background  items-center  text-white w-full'>
-        <Link href='/' className='hover:cursor-pointer'>
-          <ArrowLeft size={32} />
-        </Link>
+        <BackButton />
         <h1 className='text-lg font-semibold'>
           {params.project.split('-').join(' ')}
         </h1>

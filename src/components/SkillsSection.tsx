@@ -40,6 +40,9 @@ const SkillsSection = () => {
               <p className=' px-2 py-1 rounded-lg font-medium border text-white border-primary'>
                 Tailwind CSS
               </p>
+              <p className=' px-2 py-1 rounded-lg font-medium border text-white border-white'>
+                Shadcn UI
+              </p>
               <p className=' px-2 py-1 rounded-lg font-medium border text-white border-primary'>
                 Material UI
               </p>
@@ -61,6 +64,9 @@ const SkillsSection = () => {
               </p>
               <p className=' px-2 py-1 rounded-lg font-medium border bg-lightBackground border-primary'>
                 ExpressJS
+              </p>
+              <p className=' px-2 py-1 rounded-lg font-medium border bg-lightBackground border-green-400'>
+                Mongoose
               </p>
               <p className=' px-2 py-1 rounded-lg font-medium border bg-lightBackground border-primary'>
                 Zod
