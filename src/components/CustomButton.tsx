@@ -6,9 +6,11 @@ const CustomButton = ({
   children,
   url,
   classname,
+  altText,
 }: {
   children: ReactNode
   url: string
+  altText: string
   classname?: string
 }) => {
   return (
@@ -17,6 +19,7 @@ const CustomButton = ({
         window.open(url, '_blank')
       }}
       className={classname}
+      aria-label={altText}
     >
       {children}
     </Button>
