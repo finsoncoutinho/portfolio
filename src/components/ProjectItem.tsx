@@ -19,16 +19,14 @@ interface IProject {
 const ProjectItem = ({ project }: { project: IProject }) => {
   return (
     <Link
-      href={{
-        pathname: `/${project.projectTitle}`,
-      }}
-      className='w-full rounded-xl border-none bg-background '
+      href={`/${project.projectTitle}`}
+      className='w-full rounded-xl border-none bg-background hover:scale-105'
     >
       <div className='p-4  text-white flex  flex-col items-start justify-between'>
-        <div>
+        <div className='w-full'>
           <Image
             className='rounded-t-xl  mb-6 w-full'
-            src='/img.png'
+            src={project.thumbnail}
             width={100}
             height={100}
             alt={project.projectTitle}
@@ -37,7 +35,8 @@ const ProjectItem = ({ project }: { project: IProject }) => {
           <p className='font-bold text-xl mb-1 '>
             {project.projectTitle.split('-').join(' ')}
           </p>
-          <div className='flex gap-6  mt-4'>
+
+          <div className='flex gap-6  mt-4 flex-wrap'>
             {project.liveLink.length > 0 && (
               <CustomButton
                 url={project.liveLink}
