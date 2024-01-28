@@ -1,0 +1,86 @@
+[
+  {
+    "id": 4,
+    "thumbnail": "/worldwise.png",
+    "video": "B2uD8SY_AMA",
+    "projectTitle": "WorldWise",
+    "projectDescription": "Utilized ReactJS along with module CSS to develop the user interface\nEmployed the Context API along with useReducer to effectively manage the application state in React\nIntegrated Leaflet and React Leaflet to incorporate map functionality into the app\nUtilized JSON-server to establish a dummy backend for testing and development purposes.",
+    "techStack": "Javascript, ReactJS, Leaflet, React Leaflet, Context API",
+
+    "liveLink": "https://fast-react-pizza-k4da-b9i0q04cn-finsoncoutinho.vercel.app/",
+    "githubRepo": "https://github.com/finsoncoutinho/worldwise",
+    "postmanCollection": ""
+  },
+  {
+    "id": 5,
+    "thumbnail": "/usePopcorn.png",
+    "video": "eKVeVCkbwpI",
+    "projectTitle": "usePopcorn",
+    "projectDescription": "Employed React along with CSS to craft the user interface\nUtilized the OMDB API to fetch a list of movies by name and retrieve detailed information about specific movies\nDeveloped a custom rating component with full customization, allowing for extensive configuration through the use of passed props\nImplemented custom hooks to abstract and encapsulate state and logic, promoting reusability and modularization in the codebase",
+    "techStack": "Javascript, ReactJS, CSS",
+
+    "liveLink": "https://use-popcorn-lmsoqpks7-finsoncoutinho.vercel.app/",
+    "githubRepo": "https://github.com/finsoncoutinho/usePopcorn",
+    "postmanCollection": ""
+  },
+  {
+    "id": 6,
+    "thumbnail": "/react-quiz.png",
+    "video": "GVu2IdamjSQ",
+    "projectTitle": "React-Quiz",
+    "projectDescription": "Employed React along with CSS to craft the user interface\nImplemented the Context API along with useReducer to manage the application state, effectively avoiding prop drilling and ensuring a more efficient state management system\nDeveloped a custom hook to streamline the usage of the Context API within the application, promoting reusability and simplifying the integration of context-related functionality",
+    "techStack": "Javascript, ReactJS, Context API, CSS",
+
+    "liveLink": "https://react-quiz-b4d40mcfn-finsoncoutinho.vercel.app/",
+    "githubRepo": "https://github.com/finsoncoutinho/react-quiz",
+    "postmanCollection": ""
+  },
+  {
+    "id": 7,
+    "thumbnail": "/keeper.png",
+    "video": "utC-FGrRrko",
+    "projectTitle": "Keeper",
+    "projectDescription": "Used React, Material-UI Core, Icons, and CSS to create and style the user interface of the application\nImplemented functionalities to create, list, and delete notes in the application",
+    "techStack": "Javascript, ReactJS, CSS",
+
+    "liveLink": "https://keeper-dsqw5ff4f-finsoncoutinho.vercel.app/",
+    "githubRepo": "https://github.com/finsoncoutinho/Keeper",
+    "postmanCollection": ""
+  },
+  {
+    "id": 9,
+    "thumbnail": "/forkify.png",
+    "video": "vGxduvsNw8U",
+    "projectTitle": "Forkify",
+    "projectDescription": "Developed an application using HTML, CSS, and Vanilla JavaScript, showcasing a combination of structured markup, styling, and client-side scripting for dynamic functionality\nIntegrated API calls and manipulated the DOM using Vanilla JavaScript, demonstrating dynamic interactions and data fetching in the application",
+    "techStack": "HTML, CSS, Javascript, Parcel",
+
+    "liveLink": "",
+    "githubRepo": "https://github.com/finsoncoutinho/forkify",
+    "postmanCollection": ""
+  },
+  {
+    "id": 10,
+    "thumbnail": "/omnifood.png",
+    "video": "p5AuDVJABYc",
+    "projectTitle": "Omnifood",
+    "projectDescription": "Developed a website using HTML and CSS\nImplemented responsive design using media queries",
+    "techStack": "HTML, CSS",
+
+    "liveLink": "https://omnifood-finson.netlify.app/",
+    "githubRepo": "https://github.com/finsoncoutinho/Omnifood",
+    "postmanCollection": ""
+  },
+  {
+    "id": 10,
+    "thumbnail": "/twitter-profile.png",
+    "video": "K3GqJoLvAGs",
+    "projectTitle": "Twitter-Profile",
+    "projectDescription": "Challenged my CSS skills by creating a pixel-perfect replica of my Twitter profile\nUtilized Flexbox and Grid to achieve the layout",
+    "techStack": "HTML, CSS",
+
+    "liveLink": "https://finsoncoutinho.github.io/Twitter-HTML-CSS/",
+    "githubRepo": "https://github.com/finsoncoutinho/Twitter-HTML-CSS",
+    "postmanCollection": ""
+  }
+]
