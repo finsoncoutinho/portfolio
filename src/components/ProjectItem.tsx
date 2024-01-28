@@ -39,6 +39,7 @@ const ProjectItem = ({ project }: { project: IProject }) => {
           <div className='flex gap-6  mt-4 flex-wrap'>
             {project.liveLink.length > 0 && (
               <CustomButton
+                altText={`Live link of ${project.projectTitle}`}
                 url={project.liveLink}
                 classname='flex gap-2 font-semibold'
               >
@@ -49,6 +50,7 @@ const ProjectItem = ({ project }: { project: IProject }) => {
             )}
             {project.githubRepo.length > 0 && (
               <CustomButton
+                altText={`Github repo of ${project.projectTitle}`}
                 url={project.githubRepo}
                 classname='flex gap-2 font-semibold'
               >
@@ -59,6 +61,7 @@ const ProjectItem = ({ project }: { project: IProject }) => {
             )}
             {project.postmanCollection.length > 0 && (
               <CustomButton
+                altText={`Postman link of ${project.projectTitle}`}
                 url={project.postmanCollection}
                 classname='flex gap-2 font-semibold'
               >

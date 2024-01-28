@@ -42,11 +42,15 @@ const HeroSection = () => {
           <p className='text-white '>Coding the Future, One Line at a Time</p>
         </div>
         <div className=' flex gap-4 mt-4'>
-          <CustomButton url='mailto:finsoncoutinho2125@gmail.com'>
+          <CustomButton
+            url='mailto:finsoncoutinho2125@gmail.com'
+            altText='Contact me'
+          >
             <Mail />
             <span className='ml-2'>Contact me</span>
           </CustomButton>
           <CustomButton
+            altText='Github'
             url='https://github.com/finsoncoutinho'
             classname='bg-transparent text-white hover:bg-white hover:text-accent '
           >

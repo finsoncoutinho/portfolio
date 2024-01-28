@@ -19,6 +19,7 @@ const ContactSection = () => {
           Interested in working together? Let&apos;s connect and have a chat
         </p>
         <CustomButton
+          altText="Let's do this"
           url='mailto:finsoncoutinho2125@gmail.com'
           classname='bg-accent border-4 border-primary font-bold text-lg text-white px-10 py-6 rounded-full'
         >
@@ -27,30 +28,35 @@ const ContactSection = () => {
       </div>
       <div className='flex gap-8 justify-center mt-16 flex-wrap'>
         <CustomButton
+          altText='Github'
           url='https://github.com/finsoncoutinho'
           classname='bg-trasperent border-2 border-white rounded-full p-6 hover:bg-background hover:scale-105'
         >
           <FaGithub className='text-primary ' size={28} />
         </CustomButton>
         <CustomButton
+          altText='Twitter'
           url='https://twitter.com/finsoncoutinho'
           classname='bg-trasperent border-2 border-white rounded-full p-6 hover:bg-background hover:scale-105'
         >
           <BsTwitterX className='text-primary ' size={28} />
         </CustomButton>
         <CustomButton
+          altText='LinkedIn'
           url='https://www.linkedin.com/in/finsoncoutinho'
           classname='bg-trasperent border-2 border-white rounded-full p-6 hover:bg-background hover:scale-105'
         >
           <FaLinkedin className='text-primary ' size={28} />
         </CustomButton>
         <CustomButton
+          altText='Youtube'
           url='https://www.youtube.com/@finsoncoutinho'
           classname='bg-trasperent border-2 border-white rounded-full p-6 hover:bg-background hover:scale-105'
         >
           <BsYoutube className='text-primary ' size={28} />
         </CustomButton>
         <CustomButton
+          altText='Hashnode'
           url='https://finsoncoutinho.hashnode.dev'
           classname='bg-trasperent border-2 border-white rounded-full p-6 hover:bg-background hover:scale-105'
         >

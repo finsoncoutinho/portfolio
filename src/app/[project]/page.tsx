@@ -93,6 +93,7 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
         <div className='flex gap-6  mt-4'>
           {data.liveLink.length > 0 && (
             <CustomButton
+              altText={`Live link of ${data.projectTitle}`}
               url={data.liveLink}
               classname='flex gap-2 font-semibold'
             >
@@ -103,6 +104,7 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
           )}
           {data.githubRepo.length > 0 && (
             <CustomButton
+              altText={`Github repo of ${data.projectTitle}`}
               url={data.githubRepo}
               classname='flex gap-2 font-semibold'
             >
@@ -113,6 +115,7 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
           )}
           {data.postmanCollection.length > 0 && (
             <CustomButton
+              altText={`Postman link of ${data.projectTitle}`}
               url={data.postmanCollection}
               classname='flex gap-2 font-semibold'
             >
