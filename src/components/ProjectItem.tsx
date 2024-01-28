@@ -19,7 +19,7 @@ interface IProject {
 const ProjectItem = ({ project }: { project: IProject }) => {
   return (
     <Link
-      href={`/${project.projectTitle.toLowerCase()}`}
+      href={`projects/${project.projectTitle.toLowerCase()}`}
       className='w-full rounded-xl border-none bg-background hover:scale-105'
     >
       <div className='p-4  text-white flex  flex-col items-start justify-between'>
