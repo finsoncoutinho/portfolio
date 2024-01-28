@@ -16,7 +16,8 @@ const ContactSection = () => {
           Let&apos;s build together 🚀
         </h1>
         <p>
-          Interested in working together? Let&apos;s connect and have a chat
+          Interested in a collaboration with me? Let&apos;s connect and have a
+          chat
         </p>
         <CustomButton
           altText="Let's do this"
