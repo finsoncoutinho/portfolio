@@ -56,13 +56,13 @@ const HeroSection = () => {
         </div>
       </div>
       <div className='hidden lg:block '>
-        <VideoPlayer videoID='CtDyLTx3RAQ' options={optsLG} />
+        <VideoPlayer videoID='xvq7KfY1wCU' options={optsLG} />
       </div>
       <div className='hidden md:block lg:hidden'>
-        <VideoPlayer videoID='CtDyLTx3RAQ' options={optsMD} />
+        <VideoPlayer videoID='xvq7KfY1wCU' options={optsMD} />
       </div>
       <div className=' md:hidden'>
-        <VideoPlayer videoID='CtDyLTx3RAQ' options={optsSM} />
+        <VideoPlayer videoID='xvq7KfY1wCU' options={optsSM} />
       </div>
     </section>
   )

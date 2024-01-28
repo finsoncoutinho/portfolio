@@ -14,7 +14,7 @@ const CustomButton = ({
   return (
     <Button
       onClick={() => {
-        window.location.href = url
+        window.open(url, '_blank')
       }}
       className={classname}
     >

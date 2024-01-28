@@ -2,10 +2,11 @@ import { promises as fs } from 'fs'
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import Link from 'next/link'
+import { ArrowRight, MoveRight } from 'lucide-react'
 
 const ProjectsSection = async () => {
   const file = await fs.readFile(
-    process.cwd() + '/src/services/data.json',
+    process.cwd() + '/src/services/main-projects.json',
     'utf8'
   )
   const data = JSON.parse(file)
@@ -31,6 +32,14 @@ const ProjectsSection = async () => {
           <ProjectItem project={project} key={project.id} />
         ))}
       </div>
+
+      <Link
+        href='/projects'
+        className='mt-20 cursor-pointer border-2 text-white  border-white w-52 py-2 rounded-full text-xl justify-center items-center mx-auto flex gap-1 hover:scale-105'
+      >
+        More projects
+        <ArrowRight />
+      </Link>
     </section>
   )
 }
