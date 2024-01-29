@@ -40,7 +40,7 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
       id: 3,
       thumbnail: '/fast-react-pizza.png',
       video: '7sQ9ZQhAvAU',
-      projectTitle: 'Fast-react-pizza',
+      projectTitle: 'Fast-React-Pizza',
       projectDescription:
         'Constructed the UI with ReactJS and Tailwind CSS\nImplemented custom actions and selector methods to effectively manage and showcase both cart and user state using Redux Toolkit\nSuccessfully integrated the provided APIs to handle various functionalities, including fetching menu data, creating orders, updating order information, and fetching order details based on order ID',
       techStack: 'Javascript, ReactJS, Tailwind CSS, Redux Toolkit',
