@@ -2,7 +2,7 @@ import { promises as fs } from 'fs'
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import Link from 'next/link'
-import { ArrowRight, MoveRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 const ProjectsSection = async () => {
   const file = await fs.readFile(

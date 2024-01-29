@@ -1,38 +1,12 @@
 import BackButton from '@/components/BackButton'
 import CustomButton from '@/components/CustomButton'
 import VideoPlayer from '@/components/VideoPlayer'
-import { promises as fs } from 'fs'
-import { Archive, ArrowLeft, Divide, ExternalLink, Github } from 'lucide-react'
+import { Archive, ExternalLink, Github } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+
 import { YouTubeProps } from 'react-youtube'
 
 const ProjectDetails = async ({ params }: { params: { project: string } }) => {
-  interface IProject {
-    id: number
-    thumbnail: string
-    video: string
-    projectTitle: string
-    projectDescription: string
-    techStack: string
-    liveLink: string
-    githubRepo: string
-    postmanCollection: string
-  }
-  // const file = await fs.readFile(
-  //   process.cwd() + '/src/app/main-projects.json',
-  //   'utf8'
-  // )
-  // const file2 = await fs.readFile(
-  //   process.cwd() + '/src/app/more-projects.json',
-  //   'utf8'
-  // )
-  // const JSONdata = JSON.parse(file)
-  // const JSONdata2 = JSON.parse(file2)
-  // const data: IProject = [...JSONdata, ...JSONdata2].find(
-  //   (project: IProject) => project.projectTitle.toLowerCase() === params.project
-  // )
-
   const projects = [
     {
       id: 1,
@@ -197,7 +171,7 @@ const ProjectDetails = async ({ params }: { params: { project: string } }) => {
       <header className='sticky top-0 flex gap-8 px-6 py-4  md:px-10 shadow-md bg-background  items-center  text-white w-full'>
         <BackButton />
         <h1 className='text-lg font-semibold'>
-          {params.project.split('-').join(' ')}
+          {data?.projectTitle.split('-').join(' ')}
         </h1>
       </header>
       <main className='my-20  lg:w-[800px] md:w-[550px] w-[300px] '>
