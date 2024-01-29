@@ -1,4 +1,4 @@
-import YouTube, { YouTubeProps } from 'react-youtube'
+import { YouTubeProps } from 'react-youtube'
 
 import { Mail, Github } from 'lucide-react'
 import CustomButton from './CustomButton'
